@@ -1,2 +1,2 @@
-# snigler
-App that similar to Tinder 
+# Singler
+An app that mimics Tinder, made for practicing Vue.js. 
