@@ -1,5 +1,5 @@
 // Minimal Simple REST API Handler (in memory)
-// Author: Yaron Biton misterBIT.co.il
+
 
 "use strict";
 const express = require('express'),
