@@ -1,6 +1,6 @@
 import singlerService from '../services/singler.service'
 
-// snir : ITS NOT WORKING, JUST A SKETCH
+
 export default {
     myAge(state, getters) {
         var ageInMilliseconds = Date.now() - new Date(state.profile.birthdate);

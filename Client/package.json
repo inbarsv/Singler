@@ -2,7 +2,7 @@
   "name": "singler",
   "version": "1.0.0",
   "description": "A simple dating app",
-  "author": "Snir Shechter <snirshechter@gmail.com>",
+  "author": "Incar Svarzenberg <inbar.svarzenberg@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

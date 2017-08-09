@@ -3,9 +3,8 @@
     <h1>
       <span class="theme">{{$store.state.profile.fName+ ' '+ $store.state.profile.lName}}</span>
     </h1>
-     <img :src="$store.state.profile.imgUrl" class="imgProfile"></img> 
-    <!--<div  :style="{' background-image': 'url('+this.$store.state.profile.imgUrl+')'}"    class="img-container"></div>-->
-
+    <!-- <img :src="$store.state.profile.imgUrl" class="imgProfile"></img> -->
+    <div class="img-container background-img" :style="{'background-image': 'url('+this.$store.state.profile.imgUrl+')'}" ></div>
     <div class="details">
       <div v-if="presentMode" class="editMode">
         <span class="theme">First Name</span>
@@ -90,9 +89,7 @@
 </template>
 
 <script>
-
 import UploadImg from '../General/upload'
-
 import moment from 'moment'
 export default {
   name: 'MyProfile',
@@ -139,7 +136,6 @@ export default {
 .details {
   * {
     text-align: left;
-    outline: 1px solid red;
   }
   .btns {
     display: flex;
@@ -158,23 +154,19 @@ export default {
   p {
     display: inline;
   }
-
+    }
   .imgProfile {
-    // max-width: 10px;
-   max-height: 30vh;
-  }
-
-  
+    max-width: 10px;
 
   }
-    .img-container {
-  display: inline-block;
-  width: 100%;
-  height: 70vh;
-  border-radius: 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
+  .img-container {
+    display: block;
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 
 </style>
